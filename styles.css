@@ -27,12 +27,29 @@ button:hover{
 button:active{
     background-color: hsl(0, 0%, 50%);
 }
-.btn-operator{
-    background-color: hsl(35, 100%, 55%);
+
+/* styles.css */
+.container {
+    display: flex; /* Create a container with flexbox layout */
+    flex-direction: row-reverse; /* Stack elements in reverse order (image right, text left) */
 }
-.btn-operator:hover{
-    background-color: hsl(35, 100%, 65%);
+
+.image-container {
+    position: relative; /* Allow positioning within the container */
+    width: 30vw; /* Define image container width */
+    margin: 5vw; /* Add some margin around the container */
 }
-.btn-operator:active{
-    background-color: hsl(35, 100%, 75%);
+
+.responsive-image {
+    max-width: 100%; /* Scale image to container width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position image within container */
+    top: 0; /* Align image to top */
+    right: 0; /* Align image to right (due to reversed order) */
+}
+
+.content {
+    flex: 1; /* Allow content to occupy remaining space */
+    order: 0; /* Ensure natural order in the flexbox */
+    overflow: auto; /* Add if content might overflow vertically */
 }
