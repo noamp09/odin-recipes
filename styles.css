@@ -41,6 +41,7 @@ button:active{
 }
 
 .responsive-image {
+    border-radius: 8%;
     max-width: 100%; /* Scale image to container width */
     height: auto; /* Maintain aspect ratio */
     position: absolute; /* Position image within container */
